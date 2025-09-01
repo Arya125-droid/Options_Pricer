@@ -1,0 +1,50 @@
+    // CROW_ROUTE(app, "/")([](){
+    //     return R"(
+    //         <!DOCTYPE html>
+    //         <html>
+    //         <head>
+    //             <title>Option Pricer</title>
+    //         </head>
+    //         <body>
+    //             <h1>Option Pricer</h1>
+    //             <form onsubmit="event.preventDefault(); sendRequest();">
+    //                 <label>S (Spot Price): <input id="S" value="100"></label><br>
+    //                 <label>K (Strike Price): <input id="K" value="100"></label><br>
+    //                 <label>T (Time to Maturity): <input id="T" value="1"></label><br>
+    //                 <label>r (Interest Rate): <input id="r" value="0.05"></label><br>
+    //                 <label>v (Volatility): <input id="v" value="0.2"></label><br>
+    //                 <label>Simulations: <input id="sims" value="10000"></label><br>
+    //                 <label>Type:
+    //                     <select id="type">
+    //                         <option value="CALL">CALL</option>
+    //                         <option value="PUT">PUT</option>
+    //                     </select>
+    //                 </label><br><br>
+    //                 <button type="submit">Price Option</button>
+    //             </form>
+    //             <pre id="result"></pre>
+
+    //             <script>
+    //                 async function sendRequest() {
+    //                     const data = {
+    //                         S: parseFloat(document.getElementById("S").value),
+    //                         K: parseFloat(document.getElementById("K").value),
+    //                         T: parseFloat(document.getElementById("T").value),
+    //                         r: parseFloat(document.getElementById("r").value),
+    //                         v: parseFloat(document.getElementById("v").value),
+    //                         sims: parseInt(document.getElementById("sims").value),
+    //                         type: document.getElementById("type").value
+    //                     };
+
+    //                     const res = await fetch("/price", {
+    //                         method: "POST",
+    //                         headers: {"Content-Type": "application/json"},
+    //                         body: JSON.stringify(data)
+    //                     });
+    //                     document.getElementById("result").textContent = await res.text();
+    //                 }
+    //             </script>
+    //         </body>
+    //         </html>
+    //     )";
+    // });
