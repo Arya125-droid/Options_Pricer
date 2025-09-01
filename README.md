@@ -1,6 +1,7 @@
 # Option Pricer Web App
 Options are financial instruments that give you the right (not obligation) to buy or sell a stock at a certain price in the future.
 But how much should this right cost today? That’s exactly what an option pricer tells you.
+
 *An Option Pricer is a mathematical or computational tool that helps you calculate the fair value (price) of an option contract.*
 This project is a full-stack application that demonstrates how to calculate European call and put option prices using the **Monte-Carlo Simulations**.
 
